@@ -1,0 +1,205 @@
+{
+  "projectName": "ktor-workshop-2025",
+  "repository": "https://github.com/d-ambatenne/ktor-workshop-2025",
+  "mainBranch": "main",
+  "tasks": [
+    {
+      "id": "first-tests-empty",
+      "branch": "branch01",
+      "title": "Set up test infrastructure",
+      "difficulty": "TRIVIAL",
+      "tags": ["testing", "setup"],
+      "verification": {
+        "compileTask": ":backend:compileKotlin",
+        "testTask": ":backend:test",
+        "requiredTests": []
+      },
+      "maxAttempts": 3,
+      "contextFiles": [
+        "backend/src/main/kotlin/**/*.kt",
+        "backend/src/test/kotlin/**/*.kt",
+        "backend/src/main/resources/**",
+        "backend/build.gradle.kts",
+        "build.gradle.kts",
+        "settings.gradle.kts",
+        "gradle/libs.versions.toml"
+      ]
+    },
+    {
+      "id": "first-tests-impl",
+      "branch": "branch02",
+      "title": "Write first endpoint tests",
+      "difficulty": "EASY",
+      "tags": ["testing", "ktor-test"],
+      "verification": {
+        "compileTask": ":backend:compileKotlin",
+        "testTask": ":backend:test",
+        "requiredTests": []
+      },
+      "maxAttempts": 3,
+      "contextFiles": [
+        "backend/src/main/kotlin/**/*.kt",
+        "backend/src/test/kotlin/**/*.kt",
+        "backend/src/main/resources/**",
+        "backend/build.gradle.kts",
+        "build.gradle.kts",
+        "settings.gradle.kts",
+        "gradle/libs.versions.toml"
+      ]
+    },
+    {
+      "id": "crud-endpoints",
+      "branch": "branch03",
+      "title": "Implement CRUD routes",
+      "difficulty": "MEDIUM",
+      "tags": ["routing", "serialization", "crud"],
+      "verification": {
+        "compileTask": ":backend:compileKotlin",
+        "testTask": ":backend:test",
+        "requiredTests": []
+      },
+      "maxAttempts": 3,
+      "contextFiles": [
+        "backend/src/main/kotlin/**/*.kt",
+        "backend/src/test/kotlin/**/*.kt",
+        "backend/src/main/resources/**",
+        "backend/build.gradle.kts",
+        "build.gradle.kts",
+        "settings.gradle.kts",
+        "gradle/libs.versions.toml"
+      ]
+    },
+    {
+      "id": "structure-di",
+      "branch": "branch04",
+      "title": "Add project structure and DI",
+      "difficulty": "MEDIUM",
+      "tags": ["architecture", "di"],
+      "verification": {
+        "compileTask": ":backend:compileKotlin",
+        "testTask": ":backend:test",
+        "requiredTests": []
+      },
+      "maxAttempts": 3,
+      "contextFiles": [
+        "backend/src/main/kotlin/**/*.kt",
+        "backend/src/test/kotlin/**/*.kt",
+        "backend/src/main/resources/**",
+        "backend/build.gradle.kts",
+        "build.gradle.kts",
+        "settings.gradle.kts",
+        "gradle/libs.versions.toml"
+      ]
+    },
+    {
+      "id": "exposed-basics",
+      "branch": "branch05",
+      "title": "Database access with Exposed",
+      "difficulty": "MEDIUM",
+      "tags": ["database", "exposed"],
+      "verification": {
+        "compileTask": ":backend:compileKotlin",
+        "testTask": ":backend:test",
+        "requiredTests": []
+      },
+      "maxAttempts": 3,
+      "contextFiles": [
+        "backend/src/main/kotlin/**/*.kt",
+        "backend/src/test/kotlin/**/*.kt",
+        "backend/src/main/resources/**",
+        "backend/build.gradle.kts",
+        "build.gradle.kts",
+        "settings.gradle.kts",
+        "gradle/libs.versions.toml"
+      ]
+    },
+    {
+      "id": "exposed-relations",
+      "branch": "branch06",
+      "title": "Add database relations with Exposed R2DBC",
+      "difficulty": "HARD",
+      "tags": ["database", "exposed", "relations"],
+      "verification": {
+        "compileTask": ":backend:compileKotlin",
+        "testTask": ":backend:test",
+        "requiredTests": []
+      },
+      "maxAttempts": 3,
+      "contextFiles": [
+        "backend/src/main/kotlin/**/*.kt",
+        "backend/src/test/kotlin/**/*.kt",
+        "backend/src/main/resources/**",
+        "backend/build.gradle.kts",
+        "build.gradle.kts",
+        "settings.gradle.kts",
+        "gradle/libs.versions.toml"
+      ]
+    },
+    {
+      "id": "exposed-entities",
+      "branch": "branch07",
+      "title": "Add Exposed DAO entities with booking relations",
+      "difficulty": "HARD",
+      "tags": ["database", "exposed", "dao"],
+      "verification": {
+        "compileTask": ":backend:compileKotlin",
+        "testTask": ":backend:test",
+        "requiredTests": []
+      },
+      "maxAttempts": 3,
+      "contextFiles": [
+        "backend/src/main/kotlin/**/*.kt",
+        "backend/src/test/kotlin/**/*.kt",
+        "backend/src/main/resources/**",
+        "backend/build.gradle.kts",
+        "build.gradle.kts",
+        "settings.gradle.kts",
+        "gradle/libs.versions.toml"
+      ]
+    },
+    {
+      "id": "auth-oauth-jwt",
+      "branch": "branch09",
+      "title": "Authentication with OAuth2, sessions, JWT",
+      "difficulty": "EXPERT",
+      "tags": ["auth", "oauth", "jwt", "sessions"],
+      "verification": {
+        "compileTask": ":backend:compileKotlin",
+        "testTask": ":backend:test",
+        "requiredTests": []
+      },
+      "maxAttempts": 3,
+      "contextFiles": [
+        "backend/src/main/kotlin/**/*.kt",
+        "backend/src/test/kotlin/**/*.kt",
+        "backend/src/main/resources/**",
+        "backend/build.gradle.kts",
+        "build.gradle.kts",
+        "settings.gradle.kts",
+        "gradle/libs.versions.toml"
+      ]
+    },
+    {
+      "id": "websocket-sse",
+      "branch": "branch10",
+      "title": "WebSocket and SSE with serialization",
+      "difficulty": "HARD",
+      "tags": ["websocket", "sse", "serialization"],
+      "verification": {
+        "compileTask": ":backend:compileKotlin",
+        "testTask": ":backend:test",
+        "requiredTests": []
+      },
+      "maxAttempts": 3,
+      "contextFiles": [
+        "backend/src/main/kotlin/**/*.kt",
+        "backend/src/test/kotlin/**/*.kt",
+        "backend/src/main/resources/**",
+        "backend/build.gradle.kts",
+        "build.gradle.kts",
+        "settings.gradle.kts",
+        "gradle/libs.versions.toml"
+      ]
+    }
+  ]
+}
