@@ -15,6 +15,7 @@
         "requiredTests": []
       },
       "maxAttempts": 3,
+      "expectedOutcome": "PARTIAL",
       "contextFiles": [
         "backend/src/main/kotlin/**/*.kt",
         "backend/src/test/kotlin/**/*.kt",
@@ -37,6 +38,7 @@
         "requiredTests": []
       },
       "maxAttempts": 3,
+      "expectedOutcome": "PARTIAL",
       "contextFiles": [
         "backend/src/main/kotlin/**/*.kt",
         "backend/src/test/kotlin/**/*.kt",
